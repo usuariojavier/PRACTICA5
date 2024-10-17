@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA GERVASIO</title>
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CASA GERVASIO</h1>
+        <h2>Menú</h2>
+    </header>
+
+
+    <div class="primeros">
+        <h3>Primeros</h3>
+            <ol>
+                <li>Cesped 3 estaciones</li>
+                <li>Pinguino frito</li>
+                <li>Tiranoaurio guisado</li>
+                <li>Delfin a la plancha</li>
+                <li>Cebra estofada</li>
+            </ol>
+    </div>
+
+
+
+    <div class="segundos">
+        <h3>Segundos</h3>
+        <ol>
+            <li>Jirafa al pilpil</li>
+            <li>Cocodrilo a la Plancha</li>
+            <li>Marmota a la Vizcaína</li>
+            <li>Revuelto de piedras</li>
+            <li>Cuerno de Vaca</li>
+        </ol>
+
+    </div>
+   
+
+<div class="boton">
+ <p>mesa 3</p>
+    <button onclick="elegirMenu()">Elegir Menú</button>
+</div>
+    <script>
+        function elegirMenu() {
+            const primeros = ["-Cesped 3 estaciones", "-Pinguino frito", "-Tiranoasaurio guisado", "-Delfin a la plancha", "-Cebra estofada"];
+            const segundos = ["-Jirafa al pilpil", "-Cocodrilo a la Plancha", "-Marmota a la Vizcaína", "-Revuelto de piedras", "-Cuerno de Vaca"];
+
+            const primerPlato = parseInt(prompt("Elija el número del primer plato (1-5):"));
+            const segundoPlato = parseInt(prompt("Elija el número del segundo plato (1-5):"));
+
+            if (primerPlato >= 1 && primerPlato <= 5 && segundoPlato >= 1 && segundoPlato <= 5) {
+                alert(`Ha elegido de primer plato:\n${primeros[primerPlato -1]}\nY de segundo plato:\n${segundos[segundoPlato -1]}.\nBuen probecho!!`);
+
+            } else {
+                alert("Seleccione un número válido entre 1 y 5 para cada plato.");
+            }
+        }
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

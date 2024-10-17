@@ -1,0 +1,58 @@
+
+
+
+
+  
+  .qwitcher-grypen-bold {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('media/mesa.png'); /* Reemplaza con tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que cubra toda la altura visible */
+    font-family: 'Qwitcher Grypen', cursive;    
+}
+
+
+
+
+header {    
+    margin-left: 350px;
+    margin-top: 200px;
+}
+.primeros {
+    margin-left: 350px;
+}
+
+.segundos {
+    margin-left: 350px;
+}
+
+.boton {
+    margin-left: 400px;
+    margin-top: 60px;
+    border-radius: 15px;
+    
+}   
+
+p {
+    margin-left: 30px;
+}
+button {
+    border-radius: 15px;
+    
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(103, 64, 14);
+   
+}
